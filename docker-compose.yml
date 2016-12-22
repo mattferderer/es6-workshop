@@ -1,0 +1,9 @@
+version: "2"
+services:
+    es6_workshop:
+        build: .
+        command: nodemon -L --debug=5858
+        ports:
+            - "5858:5858"
+        volumes: 
+            - ./workshop-files/exercises:/workspace/es6-workshop/exercises
